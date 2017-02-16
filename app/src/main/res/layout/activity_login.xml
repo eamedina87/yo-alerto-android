@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_title"
+        android:background="@color/blue"
+        android:text="@string/login_title"
+        android:gravity="center"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="10sp"
+        android:textAppearance="@style/text_title" />
+
+    <ImageView 
+        android:id="@+id/login_fb"
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:src="@drawable/fb_login_es"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10sp"
+        android:contentDescription="@string/content_fb_login_es"
+        />
+    
+    <ImageView 
+        android:id="@+id/login_tw"
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:src="@drawable/tw_login"
+        android:layout_gravity="center"
+        android:contentDescription="@string/content_tw_login"
+        />
+    
+</LinearLayout>

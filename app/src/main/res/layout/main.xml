@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+        <ec.medval.hackatoniee.Cust_MainMenuOption
+            android:id="@+id/mm_option1"
+            android:layout_width="@dimen/mainmenu_option_width"
+            android:layout_height="@dimen/mainmenu_option_width"
+            android:background="@drawable/mainmenu_btn"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+        <ec.medval.hackatoniee.Cust_MainMenuOption
+            android:id="@+id/mm_option2"
+            android:layout_width="@dimen/mainmenu_option_width"
+            android:layout_height="@dimen/mainmenu_option_width"
+            android:background="@drawable/mainmenu_btn"
+            android:padding="2dp"
+            android:layout_weight="1"/>
+
+        <ec.medval.hackatoniee.Cust_MainMenuOption
+            android:id="@+id/mm_option3"
+            android:layout_width="@dimen/mainmenu_option_width"
+            android:layout_height="@dimen/mainmenu_option_width"
+            android:background="@drawable/mainmenu_btn"
+            android:padding="2dp"
+            android:layout_weight="1"/>
+
+        <ec.medval.hackatoniee.Cust_MainMenuOption
+            android:id="@+id/mm_option4"
+            android:layout_width="@dimen/mainmenu_option_width"
+            android:layout_height="@dimen/mainmenu_option_width"
+            android:background="@drawable/mainmenu_btn"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+
+
+	</LinearLayout>
+    
+    <FrameLayout 
+    	android:id="@+id/main_container"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="1" >
+
+    </FrameLayout>
+    
+</LinearLayout>

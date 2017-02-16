@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_margin="2sp"
+        android:layout_width="@dimen/mainmenu_option_image_width"
+        android:layout_height="@dimen/mainmenu_option_image_width"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_config"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/mainmenu_option_width"
+        android:layout_height="wrap_content"
+        android:text="Opcion"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="@style/MainMenu_Options"/>
+
+</LinearLayout>

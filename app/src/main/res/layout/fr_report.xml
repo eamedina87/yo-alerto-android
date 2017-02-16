@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/report_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48sp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/report_btn_policia"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/map_btn"
+            android:text="POLICÍA"
+            />
+
+        <TextView
+            android:id="@+id/report_btn_transito"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/map_btn"
+            android:text="TRÁNSITO"
+            />
+
+        <TextView
+            android:id="@+id/report_btn_medico"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/map_btn"
+            android:text="MÉDICO"
+            />
+
+        <TextView
+            android:id="@+id/report_btn_bombero"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/map_btn"
+            android:text="BOMBERO"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/report_btn_previous"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        android:layout_below="@+id/report_btn_layout"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/btn_previous"/>
+
+    <ImageView
+        android:id="@+id/report_btn_next"
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_btn_layout"
+        android:layout_alignTop="@+id/report_btn_previous"
+        android:layout_alignBottom="@+id/report_btn_previous"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn_next"/>
+
+    <TextView
+        android:id="@+id/report_btn_evento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/report_btn_previous"
+        android:layout_alignBottom="@+id/report_btn_previous"
+        android:layout_toLeftOf="@+id/report_btn_next"
+        android:layout_toRightOf="@+id/report_btn_previous"
+        android:text="ASALTO"
+        android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/report_tv_provincia"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_btn_previous"
+        android:paddingLeft="15sp"
+        android:layout_alignTop="@+id/report_provincia"
+        android:layout_alignBottom="@+id/report_provincia"
+        android:gravity="center_vertical"
+        android:text="Provincia:"/>
+
+    <EditText
+        android:id="@+id/report_provincia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_btn_previous"
+        android:layout_toRightOf="@+id/report_tv_provincia"
+        android:inputType="textCapWords"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="5sp"
+        />
+
+    <TextView
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_btn_previous"
+        android:paddingLeft="15sp"
+        android:layout_alignTop="@+id/report_ciudad"
+        android:layout_alignBottom="@+id/report_ciudad"
+        android:gravity="center_vertical"
+        android:text="Ciudad:"/>
+
+    <EditText
+        android:id="@+id/report_ciudad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_provincia"
+        android:layout_toRightOf="@+id/report_tv_provincia"
+        android:inputType="textCapWords"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="5sp"
+        />
+
+    <TextView
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_btn_previous"
+        android:paddingLeft="15sp"
+        android:layout_alignTop="@+id/report_sector"
+        android:layout_alignBottom="@+id/report_sector"
+        android:gravity="center_vertical"
+        android:text="Sector:"/>
+
+    <EditText
+        android:id="@+id/report_sector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_ciudad"
+        android:layout_toRightOf="@+id/report_tv_provincia"
+        android:inputType="text"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="5sp"
+        />
+
+    <TextView
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_btn_previous"
+        android:paddingLeft="15sp"
+        android:layout_alignTop="@+id/report_direccion"
+        android:layout_alignBottom="@+id/report_direccion"
+        android:gravity="center_vertical"
+        android:text="Dirección:"/>
+
+    <EditText
+        android:id="@+id/report_direccion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_sector"
+        android:layout_toRightOf="@+id/report_tv_provincia"
+        android:inputType="text"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="5sp"
+        />
+    <fragment
+        android:id="@+id/report_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_below="@+id/report_direccion"
+        android:layout_above="@+id/report_btn_enviar"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        />
+
+    <Button
+        android:id="@+id/report_btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

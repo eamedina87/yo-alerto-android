@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        
+        android:id="@+id/main_user"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_title"
+        android:background="@color/blue"
+        android:text="@string/main_user"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="10sp"
+        android:textAppearance="@style/text_title" />
+    
+    <TextView
+        
+        android:id="@+id/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_title"
+        android:background="@color/blue"
+        android:text="@string/main_contacts"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10sp"
+        android:textAppearance="@style/text_title" />
+    
+    <TextView 
+        android:id="@+id/main_contact_1"
+        android:layout_width="250sp"
+        android:layout_height="@dimen/text_title"
+        android:text="@string/main_contact"
+        android:layout_below="@+id/main_title"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10sp"
+        android:layout_marginLeft="10sp"
+        android:background="@color/grey"/>
+    
+    <TextView 
+        android:id="@+id/main_contact_2"
+        android:layout_width="250sp"
+        android:layout_height="@dimen/text_title"
+        android:text="@string/main_contact"
+        android:layout_below="@+id/main_contact_1"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10sp"
+        android:layout_marginLeft="10sp"
+        android:background="@color/grey"/>
+    
+    <TextView 
+        android:id="@+id/main_contact_3"
+        android:layout_width="250sp"
+        android:layout_height="@dimen/text_title"
+        android:text="@string/main_contact"
+        android:layout_below="@+id/main_contact_2"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10sp"
+        android:layout_marginLeft="10sp"
+        android:background="@color/grey"/>
+
+</LinearLayout>

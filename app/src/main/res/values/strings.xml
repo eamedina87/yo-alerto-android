@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">QuitoAlerta</string>
+    <string name="app_id">1446212355651710</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_act__main">yoAlerto</string>
+
+    <string name="google_maps_key_debug" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyAXmgp1x82x_E8xaa7Gy0zKQsSI-cFb2-0
+    </string>
+    <string name="google_maps_key_release" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyDAYBc4ITGG6I0NKYJzOVwCIbnBYkucCNk
+    </string>
+
+    <string name="login_title">Inicio de Sesión</string>
+    
+    <string name="main_contacts">Contactos</string>
+    <string name="main_contact">Contacto</string>
+    <string name="main_user">Usuario</string>
+	
+    <string name="content_fb_login_es">Inicio de Sesion de Facebook</string>
+    <string name="content_fb_login">Login with Facebook</string>
+    <string name="content_tw_login">Login with Twitter</string>
+
+    <string name="mm_option1">Botón</string>
+    <string name="mm_option2">Denuncia</string>
+    <string name="mm_option3">Mapa</string>
+    <string name="mm_option4">Configuración</string>
+    
+    <color name="blue">#3098d4</color>
+    <color name="grey">#70706f</color>
+    <color name="white">#FFFFFF</color>
+    
+    <dimen name="text_title">30sp</dimen>
+    
+    <style name="text_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <string name="title_activity_act_map">Map</string>
+</resources>

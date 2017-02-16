@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_below="@+id/map_closest_layout"
+        android:layout_above="@+id/map_address_layout"
+        />
+    <!--
+    <ImageView
+        android:id="@+id/map_config"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        android:src="@drawable/btn_config"
+        android:padding="5sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <android.widget.SearchView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/map_config"/>
+    -->
+    <LinearLayout
+        android:id="@+id/map_options"
+        android:layout_width="fill_parent"
+        android:layout_height="48sp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        >
+
+            <TextView
+                android:id="@+id/map_btn_cinco"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/map_btn"
+                android:text="5KM"/>
+
+            <TextView
+                android:id="@+id/map_btn_diez"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/map_btn"
+                android:text="10KM"/>
+
+            <TextView
+                android:id="@+id/map_btn_todos"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/map_btn"
+                android:text="TODOS"/>
+
+            <TextView
+                android:id="@+id/map_btn_cerca"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/map_btn"
+                android:text="+ CERCANO"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_closest_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/map_options"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/map_closest"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:layout_weight="1"
+            android:text="UPC más cercano: "/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:id="@+id/map_btn_ver"
+            android:text="Ir"
+            />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/map_address_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/map_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:layout_weight="1"
+            android:text="Zona: "/>
+
+        <Button
+            android:id="@+id/map_btn_stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estadísticas"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_stat_layout"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_above="@+id/map_address_layout"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:background="@color/blue"
+        android:visibility="invisible"
+        android:alpha="0.8">
+
+        <TextView
+            android:id="@+id/map_stat_homicidios"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5sp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/Map_Stats"
+            android:text="Homicidios:"/>
+
+        <TextView
+            android:id="@+id/map_stat_accidentes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5sp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/Map_Stats"
+            android:text="Muertes Accidentales:"/>
+
+        <TextView
+            android:id="@+id/map_stat_asaltos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5sp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/Map_Stats"
+            android:text="Asaltos/Robos:"/>
+
+    </LinearLayout>
+</RelativeLayout>
